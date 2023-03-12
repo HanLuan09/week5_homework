@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Random</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form action="background-random" method="POST">
+            <div class="header">
+                <h1 class="header-text">Backgroud</h1>
+                <h1 class="header-text">Gradient</h1>
+            </div>
+            <div class="container">
+                <input class="container-click" id="container-left" type="color" onchange="getColorLeft(event)">
+                <input class="container-click" id="container-right" type="color" onchange="getColorRight(event)">
+                <button class="container-click" id="container-btn" type="button" onclick="btnFunction()">Random</button>
+            </div>
+            <div class="footer">
+                <h2 class="footer-text">This is the backgroud</h2>
+                <span id="footer-text-color">linear-gradient(to right,rgb(255, 255, 0), rgb(255, 0, 0));</span>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
